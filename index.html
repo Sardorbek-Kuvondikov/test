@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JS 2-oy umumiy amaliy dasliklar</title>
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+        <link rel="stylesheet" href="./main.css">
+    </head>
+    <body>
+        <!-- movies header  -->
+        <header>
+            <nav class="navbar">
+                <div class="container">
+                    <div
+                        class="header__control-box">
+                        <img class="movies__img" src="./images/uzmovie.logo.gif"
+                            alt="uzmovie.com">
+                        <ul
+                            class="text">
+                            <li class="list list__enter-page">BOSH SAHIFA</li>
+                            <li class="list list__two-page">KINOLAR</li>
+                            <li class="list list__three-page">SERIALLAR</li>
+                            <li class="list list__four-page">JANR</li>
+                            <li class="list list__five-page">YIL</li>
+                            <li class="list list__sixs-page">MAMLAKAT</li>
+                            <li class="list list__seven-page">KINOLAR</li>
+                        </ul>
+                        <div class="login__page">
+                            <i class="fa-solid fa-user-plus login__img"></i>
+                            <a href="#">SING UP</a>
+                            <a href="#">LOGIN</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <!-- 1-section filter sort -->
+            <section>
+                <div class="container">
+                    <div class="movies__filt-filters">
+                        <form class="form js-moies-form">
+                            <input class="movies__search-input js-search-input"
+                                type="text" placeholder="Search..."
+                                aria-label="Search...">
+                            <select
+                                class="movies__categories js-movies-categories">
+                                <option value="All">All</option>
+                            </select>
+                            <select class="movies__sort js-movies-sort">
+                                <option value="All" selected
+                                    disabled>Sort</option>
+                                <option value="All">A-Z</option>
+                                <option value="All">Z-A</option>
+                            </select>
+                            <input class="movies__min-year js-movies-min-year"
+                                type="number" placeholder="Min year"
+                                aria-label="Min year">
+                            <input class="movies__max-year js-movies-max-year"
+                                type="number" placeholder="Max year"
+                                aria-label="Max year">
+                            <button class="button" type="submit">Click</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 2-section movies render DOM -->
+            <section>
+                <div class="container">
+                    <div class="movies__remder">
+                        <p class="movies__not-found js-not-found">NOT FOUND ?
+                            enter
+                            another</p>
+                        <ul class="movies__text js-movies-render-text">
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- template -->
+            <template class="js-template">
+                <li class="movies__list">
+                    <img class="movies__imgs js-movies-img" src alt>
+                    <h3 class="movies__title js-movies-title"></h3>
+                    <div class="movies__information-box">
+                        <div class="movies__reting">
+                            <i class="fa-regular fa-star"></i>
+                            <span class="js-movies-rating"></span>
+                        </div>
+                        <div>
+                            <i
+                                class="fa-solid fa-calendar-days"></i>
+                            <span class="js-movies-year"></span>
+                        </div>
+                        <div>
+                            <i class="fa-regular fa-clock"></i>
+                            <span class="js-movies-clock"></span>
+                        </div>
+                    </div>
+                    <p
+                        class="movies__categories-box js-movies-categories"></p>
+                    <button
+                        class="movies__info-btn js-movies-info-btm">
+                        <i
+                            class="fa-solid fa-circle-info"> </i>
+                        More
+                        info</button>
+                    <button class="movies__add"> <i
+                            class="fa-solid fa-inbox"> </i>
+                        movie Add</button>
+                    <time class="film__time js-film-time"></time>
+                </li>
+            </template>
+        </main>
+        <script src="./js/movies.js"></script>
+        <script src="./js/main.js"></script>
+    </body>
+</html>
