@@ -1,2 +1,2 @@
 # 🧪 test
-o'quvchilarga sinov tariqasida ko'rsatilgan
+o'quvchilarga sinov tariqasida ko'rsatilgan.
